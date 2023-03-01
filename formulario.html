@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Formuálário para cadastrar os alunos do Instituto Arcami">
+    <link rel="stylesheet" type="text/css" href="css/style_formulario.css" media="">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de alunos</h1>
+        <p id="subtitulo"> Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Nome Completo</label>
+                <input type="text" name="Nome Completo" id="nome_completo" required>
+            </div>
+            <div class="campo" required>
+                <label>DDD</label>
+                <input type="text" name="ddd" id="ddd" required>
+                <label>Telefone</label>
+                <input type="text" name="Telefone" id="telefone" required>    
+            </div>
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" name="Email" id="email" required>    
+            </div>
+            <div class="campo" required>
+                <label>Qual o sexo?</label>
+                <br>
+                <label>
+                    <input type="radio" name="Masculino" value="">Masculino
+                </label>
+                <label>
+                    <input type="radio" name="Feminino" value="">Feminino
+                </label>
+            </div>
+        </fieldset>
+
+    <h1><strong>Endereço</strong></h1>
+    <br>
+        <fieldset>
+            <label>Endereço</label>
+            <div class="campo">
+                <label>
+                    <select id="uf" required>
+                        <option selected disabled value="">Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+                    </select>
+                </label>
+                <p>Complemento</p>
+            <div><textarea rows="2" style="width: 26em" id="obs" nome="obs"></textarea></div>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <h2><strong>Informações sobre o curso</strong></h2>
+        </div>
+        <fieldset id="check" class="grupo" required>
+            <label>Selecione o curso:</label>
+            <div id="check" required>
+                <input type="checkbox" id="CIC" name="instrumentação_cirurgica" value="instrumentação_cirurgica">
+                <label for="CIC">Instrumentação cirúrgica</label>
+            </div>
+            <br>
+            <label> Selecione a turma:</label>
+            <div class="campo" required> 
+                <input type="checkbox" id="turma1domingo" name="turma1_domingo" value="domingo1">
+                <label for="turma1domingo">Turma 1 domingo - integral</label> 
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Observação!</strong></label>
+            <br>
+            <textarea rows="2" style="width: 26em" id="obs" nome="obs"></textarea>
+        </div>
+        <button type="submit" class="botao">Enviar!</button>
+    </form>
+</body>
+</html>

@@ -1,112 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Formula´rio para cadastrar os alunos do Instituto Arcami">
-    <link rel="stylesheet" type="text/css" href="style.css" media="">
-    <title>Formulário de Inscrição</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>catálogo Carros</title>
+
+  <meta name="description" content="catálogo de Carros.">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Arcami" />
+  <meta property="og:description" content="Cursos" />
+  <meta property="og:url" content="http://vaniamesquita.me/site-carro" />
+  <meta property="og:image" content="" />
 </head>
+
 <body>
-    <div>
-        <h1 id="titulo">Cadastro de alunos</h1>
-        <p id="subtitulo"> Complete suas informações</p>
-        <br>
+
+  <header>
+    <div class="content">
+      <nav>
+        <p class="brand">Instituto<strong>Arcami</strong></p>
+        <ul>
+          <li><a href="#catalog">catálogo</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#feature">Características</a></li>
+          <a href="formulario.html"><button>Login</button></a>
+        </ul>
+      </nav>
+
+      <div class="header-block">
+        <div class="text">
+          <h2>A melhor instituição do vale</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+        </div>
+
+        <img src="img/car-header.png" alt="car">
+      </div>
+
     </div>
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label>Nome Completo</label>
-                <input type="text" name="Nome Completo" id="nome_completo" required>
-            </div>
-            <div class="campo" required>
-                <label>DDD</label>
-                <input type="text" name="ddd" id="ddd" required>
-                <label>Telefone</label>
-                <input type="text" name="Telefone" id="telefone" required>    
-            </div>
-            <div class="campo">
-                <label>Email</label>
-                <input type="email" name="Email" id="email" required>    
-            </div>
-            <div class="campo" required>
-                <label>Qual o sexo?</label>
-                <br>
-                <label>
-                    <input type="radio" name="Masculino" value="">Masculino
-                </label>
-                <label>
-                    <input type="radio" name="Feminino" value="">Feminino
-                </label>
-            </div>
-        </fieldset>
+  </header>
 
-    <h1><strong>Endereço</strong></h1>
-    <br>
-        <fieldset>
-            <label>Endereço</label>
-            <div class="campo">
-                <label>
-                    <select id="uf" required>
-                        <option selected disabled value="">Selecione o estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
+  <section class="catálogo" id="catálogo">
+    <div class="content">
+      <div class="title-wrapper-catalog">
+        <p>Encontro o curso perfeito</p>
+        <h3>catálogo</h3>
+      </div>
+      <div class="filter-card">
+        <input type="text" class="search-input" placeholder="Pesquise seu curso aqui">
+        <button class="search-button">Pesquisar</button>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Curso Enfermagem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
 
-                    </select>
-                </label>
-                <p>Complemento</p>
-            <div><textarea rows="2" style="width: 26em" id="obs" nome="obs"></textarea></div>
-            </div>
-        </fieldset>
-        <div class="campo">
-            <h2><strong>Informações sobre o curso</strong></h2>
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Curso radiologia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
         </div>
-        <fieldset id="check" class="grupo" required>
-            <label>Selecione o curso:</label>
-            <div id="check" required>
-                <input type="checkbox" id="CIC" name="instrumentação_cirurgica" value="instrumentação_cirurgica">
-                <label for="CIC">Instrumentação cirúrgica</label>
-            </div>
-            <br>
-            <label> Selecione a turma:</label>
-            <div class="campo" required> 
-                <input type="checkbox" id="turma1domingo" name="turma1_domingo" value="domingo1">
-                <label for="turma1domingo">Turma 1 domingo - integral</label> 
-            </div>
-        </fieldset>
-        <div class="campo">
-            <br>
-            <label><strong>Observação!</strong></label>
-            <br>
-            <textarea rows="2" style="width: 26em" id="obs" nome="obs"></textarea>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Curso pós-técnico em instrumentação cirúrgica</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
         </div>
-        <button type="submit" class="botao">Enviar!</button>
-    </form>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Curso Técnico em Prótese dentaria + auxiliar em saúde bucal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Técnico em patologia e necropsia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Técnico em análises clínicas e patologia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Pós-técnico em radioterapia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Pós-técnico em Ressonância magnética</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <img src="img/car-card.png" alt="Car">
+          <div class="card-content">
+            <h3>Pó-técnico em UTI </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!</p>
+            <button type="button">Saiba mais! </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title-wrapper-about">
+        <p>Sobre nós</p>
+        <h3>Quem somos!</h3>
+
+      </div>
+      <div class="about-content">
+        <div class="left">
+          <img src="img/about.png" alt="About">
+        </div>
+        <div class="right">
+          <h3>O Instituto Arcami</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reiciendis officiis repellendus debitis eos, quaerat dolores incidunt voluptatibus mollitia? Voluptates, porro quibusdam molestiae, facilis iure, aspernatur ea officiis esse quam reprehenderit reiciendis ratione eum laboriosam. Alias saepe nobis voluptate quam voluptatum eius quia veritatis sequi voluptatibus quas quasi iste numquam magni, dignissimos assumenda obcaecati corporis itaque quae praesentium dolorum! Voluptatem rerum placeat ad impedit ab recusandae dicta veniam praesentium sint vitae soluta maxime hic tempora, blanditiis error, atque nihil fugit repellendus cupiditate eaque qui delectus quod. Enim, mollitia! Velit sequi laudantium accusamus dolor assumenda pariatur a accusantium nam quis cumque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="content">
+      <div class="title-wrapper-features">
+        <p>Nosso diferencial</p>
+        <h3>Características</h3>
+      </div>
+
+      <div class="feature-card-block">
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Inovação</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Tecnologia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Estágio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Professores exclusivos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Material exclusivo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="feature-card-item">
+          <img src="img/feature-planet.png" alt="Feature">
+          <div class="feature-text-content">
+            <h3>Laboratórios avançados</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="main">
+      <div class="contant footer-links">
+        <div class="footer-company">
+          <h4>Instituto</h4>
+          <h6>Sobre nós</h6>
+          <h6>Contato</h6>
+        </div>
+        <div class="footer-rental">
+          <h4>Cursos</h4>
+          <h6>Enfermagem</h6>
+          <h6>Radiologia</h6>
+          <h6>Saúde bucal</h6>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos!</h4>
+          <div class="social-icons">
+            <a href=""><img src="img/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <h6>+55 87 988087191</h6>
+          <h6> ferreiramateusalencar@gmail.com</h6>
+          <h6>Av. Integração, Petrolina PE</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <p>Instituto<strong>Arcami </strong> - 2023</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
